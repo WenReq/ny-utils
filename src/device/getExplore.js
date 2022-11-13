@@ -3,7 +3,7 @@
  * @Date: 2022-11-09 21:17:24
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-11 23:49:16
- * @FilePath: /realize-utils/src/device/getExplore.js
+ * @FilePath: /ny-utils/src/device/getExplore.js
  * @Description:
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
@@ -35,11 +35,11 @@ export let getExplore = function getExplore() {
     : 0;
 
   // 根据关系进行判断
-  if (sys.ie) return 'IE：' + sys.ie;
-  if (sys.edge) return 'EDGE: ' + sys.edge;
-  if (sys.firefox) return 'Firefox: ' + sys.firefox;
-  if (sys.chrome) return 'Chrome: ' + sys.chrome;
-  if (sys.opera) return 'Opera: ' + sys.opera;
-  if (sys.safari) return 'Safari: ' + sys.safari;
-  return 'unknown';
+  if (sys.ie) return "IE：" + sys.ie;
+  if (sys.edge) return "EDGE: " + sys.edge;
+  if (sys.firefox) return "Firefox: " + sys.firefox;
+  if (sys.chrome) return "Chrome: " + sys.chrome;
+  if (sys.opera) return "Opera: " + sys.opera;
+  if (sys.safari) return "Safari: " + sys.safari;
+  return "unknown";
 };

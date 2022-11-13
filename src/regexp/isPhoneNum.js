@@ -3,7 +3,7 @@
  * @Date: 2022-11-10 23:22:07
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-12 00:06:11
- * @FilePath: /realize-utils/src/regexp/isPhoneNum.js
+ * @FilePath: /ny-utils/src/regexp/isPhoneNum.js
  * @Description:
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.

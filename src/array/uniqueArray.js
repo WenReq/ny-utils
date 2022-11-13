@@ -3,7 +3,7 @@
  * @Date: 2022-11-09 21:17:24
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-10 22:56:45
- * @FilePath: /realize-utils/src/array/uniqueArray.js
+ * @FilePath: /ny-utils/src/array/uniqueArray.js
  * @Description:
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
@@ -16,7 +16,7 @@
  */
 export let uniqueArray = function uniqueArray(array) {
   if (!Array.isArray(array)) {
-    throw new Error('第一个参数必须是数组');
+    throw new Error("第一个参数必须是数组");
   }
   if (array.length == 1) {
     return array;

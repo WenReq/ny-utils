@@ -84,39 +84,27 @@ console.log(randomNumber(0, 50));
 
 ### Array
 
-- [equalityArray](https://github.com/wenreq/realize-utils/blob/master/src/array/equalityArray.js)
-  判读两个数组是否相等
-- [mergeArrayDelRepeat](https://github.com/wenreq/realize-utils/blob/master/src/array/mergeArrayDelRepeat.js)
-  合并数组后去重
-- [uniqueArray](https://github.com/wenreq/realize-utils/blob/master/src/array/uniqueArray.js)
-  数组去重
-- [subArray](https://github.com/wenreq/realize-utils/blob/master/src/array/subArray.js)
-  数组相减
+- equalityArray(arr1, arr2)：判读两个数组是否相等
+- mergeArrayDelRepeat(arr1, arr2)：合并数组后去重
+- uniqueArray(arr)：数组去重
+- subArray(arr1, arr2)：数组相减
 
 ### Class
 
-- [addClass](https://github.com/wenreq/realize-utils/blob/master/src/class/addClass.js)
-  为元素添加 class
-- [hasClass](https://github.com/wenreq/realize-utils/blob/master/src/class/hasClass.js)
-  判断元素是否有某个 class
-- [removeClass](https://github.com/wenreq/realize-utils/blob/master/src/class/removeClass.js)
-  为元素移除 class
+- addClass(ele, str)：为元素添加 class
+- hasClass(ele, str)：判断元素是否有某个 class
+- removeClass(ele, str)：为元素移除 class
 
 ### Cookie
 
-- [getCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/getCookie.js)
-  根据 name 读取 Cookie
-- [setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js)
-  根据 name,value,days 设置 Cookie
-- [removeCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/removeCookie.js)
-  根据 name 删除 Cookie
+- getCookie(name)：根据 name 读取 Cookie
+- setCookie(name, value, days)：根据 name,value,days 设置 Cookie
+- removeCookie(name)：根据 name 删除 Cookie
 
 ### Device
 
-- [getExplore](https://github.com/wenreq/realize-utils/blob/master/src/device/getExplore.js)
-  获取浏览器：版本号
-- [getOS](https://github.com/wenreq/realize-utils/blob/master/src/device/getOS.js)
-  获取操作系统类型
+- getExplore()：获取浏览器：版本号
+- getOS()：获取操作系统类型
 
 ### Dom
 

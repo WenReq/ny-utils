@@ -3,13 +3,13 @@
  * @Date: 2022-11-09 21:17:24
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-11 21:25:36
- * @FilePath: /realize-utils/src/dom/scrollTo.js
+ * @FilePath: /ny-utils/src/dom/scrollTo.js
  * @Description:
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
-import { getScrollTop } from './getScrollTop';
-import { setScrollTop } from './setScrollTop';
+import { getScrollTop } from "./getScrollTop";
+import { setScrollTop } from "./setScrollTop";
 var requestAnimFrame = (function () {
   // window.requestAnimationFrame 要求浏览器在下次重绘之前调用指定的回调函数更新动画。
   return (

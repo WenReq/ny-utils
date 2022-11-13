@@ -3,7 +3,7 @@
  * @Date: 2022-11-10 23:21:56
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-12 00:00:48
- * @FilePath: /realize-utils/src/object/mergeObject.js
+ * @FilePath: /ny-utils/src/object/mergeObject.js
  * @Description:
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
@@ -17,7 +17,7 @@
  */
 export let mergeObject = function mergeObject(target, source) {
   //检测target是不是对象
-  if (target === null || typeof target !== 'object') {
+  if (target === null || typeof target !== "object") {
     target = {};
   }
   // 如果值是Array类型直接返回
@@ -27,7 +27,7 @@ export let mergeObject = function mergeObject(target, source) {
   let sourcePropValue = null;
   Object.keys(source).forEach(function (prop) {
     sourcePropValue = source[prop];
-    if (sourcePropValue && typeof sourcePropValue === 'object') {
+    if (sourcePropValue && typeof sourcePropValue === "object") {
       target[prop] = mergeObject(target[prop], sourcePropValue);
     }
     if (Object.prototype.hasOwnProperty.call(target, prop)) {

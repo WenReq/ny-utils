@@ -3,7 +3,7 @@
  * @Date: 2022-11-09 21:17:24
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-10 22:48:45
- * @FilePath: /realize-utils/src/dom/windowResize.js
+ * @FilePath: /ny-utils/src/dom/windowResize.js
  * @Description:
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
@@ -17,9 +17,9 @@
  */
 export let windowResize = function windowResize(downCb, upCb) {
   var clientHeight = window.innerHeight;
-  downCb = typeof downCb === 'function' ? downCb : function () {};
-  upCb = typeof upCb === 'function' ? upCb : function () {};
-  window.addEventListener('resize', () => {
+  downCb = typeof downCb === "function" ? downCb : function () {};
+  upCb = typeof upCb === "function" ? upCb : function () {};
+  window.addEventListener("resize", () => {
     var height = window.innerHeight;
     if (height === clientHeight) {
       downCb();

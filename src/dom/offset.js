@@ -3,7 +3,7 @@
  * @Date: 2022-11-09 21:17:24
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-10 22:50:14
- * @FilePath: /realize-utils/src/dom/offset.js
+ * @FilePath: /ny-utils/src/dom/offset.js
  * @Description:
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.

@@ -3,7 +3,7 @@
  * @Date: 2022-11-09 21:17:24
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-09 22:26:06
- * @FilePath: /realize-utils/src/url/stringifyQueryString.js
+ * @FilePath: /ny-utils/src/url/stringifyQueryString.js
  * @Description: esm
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
@@ -15,7 +15,7 @@
  * @returns {String}
  */
 export let stringifyQueryString = function stringifyQueryString(obj) {
-  if (!obj) return '';
+  if (!obj) return "";
   var pairs = [];
 
   for (var key in obj) {
@@ -23,15 +23,15 @@ export let stringifyQueryString = function stringifyQueryString(obj) {
     if (value instanceof Array) {
       for (var i = 0; i < value.length; ++i) {
         pairs.push(
-          encodeURIComponent(key + '[' + i + ']') +
-            '=' +
+          encodeURIComponent(key + "[" + i + "]") +
+            "=" +
             encodeURIComponent(value[i])
         );
       }
       continue;
     }
-    pairs.push(encodeURIComponent(key) + '=' + encodeURIComponent(obj[key]));
+    pairs.push(encodeURIComponent(key) + "=" + encodeURIComponent(obj[key]));
   }
 
-  return pairs.join('&');
+  return pairs.join("&");
 };

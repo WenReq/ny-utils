@@ -3,7 +3,7 @@
  * @Date: 2022-11-09 21:17:24
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-10 22:52:57
- * @FilePath: /realize-utils/src/cookie/setCookie.js
+ * @FilePath: /ny-utils/src/cookie/setCookie.js
  * @Description:
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
@@ -18,5 +18,5 @@
 export let setCookie = function setCookie(name, value, days) {
   var date = new Date();
   date.setDate(date.getDate() + days);
-  document.cookie = name + '=' + value + ';expires=' + date.toUTCString();
+  document.cookie = name + "=" + value + ";expires=" + date.toUTCString();
 };

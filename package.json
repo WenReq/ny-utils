@@ -10,9 +10,15 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "utils",
+    "deepClone",
+    "debounce",
+    "throttle"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -22,5 +28,8 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.1.0",
     "rollup": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=16.13.2"
   }
 }

@@ -2,7 +2,7 @@
  * @Author: wenreq 294491328@qq.com
  * @Date: 2022-11-12 22:56:00
  * @LastEditors: wenreq 294491328@qq.com
- * @LastEditTime: 2022-11-12 22:57:50
+ * @LastEditTime: 2022-11-13 18:13:35
  * @FilePath: /ny-utils/test/script.html
  * @Description: 
  * 
@@ -15,8 +15,38 @@
 </head>
 
 <body>
+  <div id="app">Hello World!</div>
+  <button onclick="nyUtils.toFullScreen()">全屏</button>
+  <button onclick="nyUtils.exitFullScreen()">退出全屏</button>
   <script>
     nyUtils.hello();
+
+    let explore = nyUtils.getExplore();
+    let os = nyUtils.getOS();
+    let color = nyUtils.randomColor();
+    let num = nyUtils.randomNumber(0, 50);
+    let amount = nyUtils.standardAmount(7000123);
+    let integerAmount = nyUtils.standardIntegerAmount(7000123);
+    let digit = nyUtils.digitUppercase(777777777);
+    let loseTime = nyUtils.formatRemainTime('2022-11-10');
+    let passTime = nyUtils.formatPassTime('2022-11-10');
+    let formatDater = nyUtils.dateFormater('YYYY-MM-DD', '2020.11.29')
+    let emptyStr = nyUtils.emptyFn(77, '%')
+
+    console.log('type:version=', explore);
+    console.log('system=', os);
+    console.log('color=', color);
+    console.log('num=', num);
+    document.getElementById('app').style.color = color;
+    console.log('standard=', amount);
+    console.log('integerAmount=', integerAmount);
+    console.log('digit=', digit);
+    console.log('loseTime=', loseTime);
+    console.log('passTime=', passTime);
+    console.log('formatDater=', formatDater);
+    console.log('emptyFn=', emptyStr)
+
+    nyUtils.goodbye();
   </script>
 </body>
 

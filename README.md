@@ -21,19 +21,64 @@ pnpm add ny-utils -D
 ```
 
 ```js
-import { setStorage, getStorage, uniqueArray } from "realize-utils";
-setStorage("name", "wen");
-let name = getStorage("name");
-console.log(name); // wen
+import { emptyFn, randomColor, randomNumber } from "ny-utils";
 
-let arr = [1, 3, 5, 1, 2, 3, 5];
-let uniqueArr = uniqueArray(arr);
-console.log(uniqueArr); // [1, 3, 5, 2]
+console.log(getExplore());
+console.log(emptyFn(77, "%"));
+console.log(randomColor());
+console.log(randomNumber(0, 50));
 ```
 
 ### CDN
 
+```html
+<html>
+  <head>
+    <!-- unpkg.com/:package@:version/:file -->
+    <script src="https://unpkg.com/ny-utils@1.0.0/dist/ny-utils.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app">Hello World!</div>
+    <button onclick="nyUtils.toFullScreen()">全屏</button>
+    <button onclick="nyUtils.exitFullScreen()">退出全屏</button>
+    <script>
+      nyUtils.hello();
+
+      let explore = nyUtils.getExplore();
+      let os = nyUtils.getOS();
+      let color = nyUtils.randomColor();
+      let num = nyUtils.randomNumber(0, 50);
+      let amount = nyUtils.standardAmount(7000123);
+      let integerAmount = nyUtils.standardIntegerAmount(7000123);
+      let digit = nyUtils.digitUppercase(777777777);
+      let loseTime = nyUtils.formatRemainTime("2022-11-10");
+      let passTime = nyUtils.formatPassTime("2022-11-10");
+      let formatDater = nyUtils.dateFormater("YYYY-MM-DD", "2020.11.29");
+      let emptyStr = nyUtils.emptyFn(77, "%");
+
+      console.log("type:version=", explore);
+      console.log("system=", os);
+      console.log("color=", color);
+      console.log("num=", num);
+      document.getElementById("app").style.color = color;
+      console.log("standard=", amount);
+      console.log("integerAmount=", integerAmount);
+      console.log("digit=", digit);
+      console.log("loseTime=", loseTime);
+      console.log("passTime=", passTime);
+      console.log("formatDater=", formatDater);
+      console.log("emptyFn=", emptyStr);
+
+      nyUtils.goodbye();
+    </script>
+  </body>
+</html>
+```
+
 ### CJS
+
+在 node 环境中引入 `https://unpkg.com/ny-utils@1.0.0/dist/cjs/index.js` 使用。
 
 ## API 文档
 
